@@ -4,8 +4,8 @@ async function shareCard(){
  const status=document.getElementById('notice');
  if(location.protocol==='file:'){document.getElementById('share-feedback').textContent='請點「儲存圖片」後分享 / Save the image below to share.';return}
  try{
-  const response=await fetch('assets/rebecca-share-card.png');if(!response.ok)throw Error('Image unavailable');
-  const file=new File([await response.blob()],'Rebecca-GDT-business-card.png',{type:'image/png'});
+  const response=await fetch('assets/rebecca-share-card-v2.png');if(!response.ok)throw Error('Image unavailable');
+  const file=new File([await response.blob()],'Rebecca-GDT-business-card-v2.png',{type:'image/png'});
   if(navigator.canShare&&navigator.canShare({files:[file]})){await navigator.share({files:[file],title:'Rebecca Chien · GDT Journey'});return}
   document.getElementById('share-feedback').textContent='此瀏覽器請儲存圖片後分享 / Save the image below to share.';
  }catch(e){if(e.name!=='AbortError')document.getElementById('share-feedback').textContent='請儲存圖片後分享 / Save the image below to share.'}
