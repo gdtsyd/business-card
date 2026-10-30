@@ -1,0 +1,48 @@
+/* Refined brand layout; loaded after base styles. */
+:root{--ink:#164b85;--muted:#526b84;--gold:#c8872c;--line:#dce6f1}
+body{background:radial-gradient(ellipse at top,#faf7ef 0,#e0ebf6 70%);font-family:"Segoe UI","Microsoft JhengHei",system-ui,sans-serif;line-height:1.65}
+.card{max-width:520px;margin:40px auto;background:#edf3fa;border-radius:24px;box-shadow:0 22px 80px #164b851c;border:1px solid #dce5e6}
+.top{padding:29px 30px 32px;background:linear-gradient(150deg,#fff 48%,#fff9ed);border-top:5px solid #d29a44;border-bottom:1px solid #e7dfcf}
+.brand{height:99px;max-width:320px;margin:0 auto 26px}
+.eyebrow{color:#82602e;font-size:10px;letter-spacing:2.7px;font-weight:600}
+.top h1{font-size:36px;letter-spacing:-1.1px;line-height:1.25;margin:11px 0 8px;font-weight:650}
+.role{display:inline-block;margin:0;padding:3px 12px;border:1px solid #e4d5b8;border-radius:6px;background:#fff8e9;color:#7a5727;font-size:12px;letter-spacing:1px;font-weight:600}
+.content{padding:24px 20px 8px}
+.panel{position:relative;background:#fff;border:1px solid #dbe4e7;border-radius:17px;padding:22px 18px 18px;margin-bottom:20px;box-shadow:0 3px 9px #164b8504}
+.section-heading{gap:12px;align-items:center;margin-bottom:19px;padding-bottom:16px;border-bottom:1px solid #e8edef}
+.section-number{height:36px;width:29px;border-radius:0;background:transparent;color:#a87b3c;font-size:12px;font-weight:650;border-right:1px solid #dfd1b8;padding-right:9px;letter-spacing:.5px}
+.section-heading h2{font-size:18px;font-weight:700;line-height:1.4;letter-spacing:.3px}
+.en-heading{color:#62777e;font-size:11px;letter-spacing:.7px;font-weight:450;margin-top:3px}
+.row{margin-top:10px;padding:14px 15px;min-height:74px;border:1px solid #dce6f1;border-radius:11px;background:#fcfdfd;gap:12px}
+.row strong{font-size:14px;font-weight:650;line-height:1.5}
+.row small{font-size:12px;line-height:1.65;color:#526b84;margin-top:4px;overflow-wrap:anywhere}
+.en-inline{font-size:12px;font-weight:450;color:#5c747c;margin-left:5px}
+.arrow{color:#66818a;font-size:17px;align-self:center;min-width:22px;text-align:right}
+.row>span:first-child{min-width:0;flex:1}.row>span.arrow{flex:0 0 auto}
+.contact .row:first-of-type{border-left:3px solid #cfa255}
+.company .app-feature{margin:22px 0 0;padding:22px 17px 18px;border-radius:13px;border:1px solid #d9b674;background:linear-gradient(135deg,#fff3d4,#f5d99f);box-shadow:none}
+.app-kicker{color:#7c571d;letter-spacing:.9px;font-size:9px;font-weight:650}
+.app-feature h2{font-size:23px;line-height:1.35;font-weight:700;margin:10px 0 19px;letter-spacing:-.3px}
+.app-feature .en-heading{font-size:12px;color:#7c602f;letter-spacing:.4px;margin-top:4px}
+.downloads{gap:10px}.store{border-radius:10px;background:#164b85;border:1px solid #164b85;font-size:17px;padding:14px 6px 13px;font-weight:650}
+.store span{font-size:10px;color:#d9e9f7;letter-spacing:.2px}.store b{font-size:10px;font-weight:550;margin-top:7px;color:#ffe5b2}
+.line-section+.line-section{border-top:1px solid #e2e8eb;margin-top:18px;padding-top:8px}
+.official-line{background:#f3f9f5;border-color:#d5e6da;border-left:3px solid #69a27b}
+.personal-line{background:#f4f7fc;border-color:#d8e3ef;border-left:3px solid #7497bd}
+.row strong:has(.en-account){padding-right:90px;position:relative}
+.en-account{display:block;font-size:11px;color:#546d77;font-weight:450;letter-spacing:.25px;margin-top:1px}
+.badge{font-size:10px;letter-spacing:.1px;border-radius:5px;padding:2px 7px;line-height:1.5;font-weight:550;margin:0}
+.row strong:has(.en-account)>.badge{right:0;top:2px}
+.official{color:#386548;background:#e1eee4;border:1px solid #d3e4d7}.personal{color:#49698f;background:#e5edf7;border:1px solid #d9e3f1}
+.location{background:#f5f9fe;border:1px solid #e1e8eb;padding:16px;border-radius:11px;margin-top:12px}
+.location strong{font-size:14px;font-weight:650}.location p{font-size:12px;color:#526b84;line-height:1.8;margin:7px 0 11px}.location .en-note{font-size:11px;margin-top:7px;line-height:1.75}
+.location a{font-size:11px;color:#795625;background:#fff8e9;border:1px solid #e8d9b9;padding:6px 13px;border-radius:6px;min-height:35px}
+.share{background:#164b85;color:white;border:1px solid #164b85;min-height:49px;border-radius:11px;font-size:13px;font-weight:550;letter-spacing:.3px;margin-top:24px}
+.footer{color:#657a83;font-size:9px;letter-spacing:1.5px;padding:7px 12px 26px}
+dialog .close{min-height:44px;background:#164b85;color:#fff}
+@media(hover:hover){.row:hover{background:#f0f5f6;border-color:#9db2ba;filter:none}.store:hover,.share:hover{background:#245563;filter:none}.location a:hover{background:#f9edcf;filter:none}}
+@media(prefers-reduced-motion:no-preference){.row,.store,.share{transition:background .15s,border-color .15s}}
+@media(max-width:540px){body{background:#edf3fa}.card{border:0;margin:0 auto;border-radius:0;box-shadow:none}.top{padding:25px 25px 29px}.content{padding:21px 16px 8px}}
+@media(max-width:360px){.top{padding-left:21px;padding-right:21px}.top h1{font-size:32px}.brand{height:87px;margin-bottom:23px}.content{padding:17px 12px 8px}.panel{padding:19px 13px 15px}.row{padding:13px 11px;gap:7px}.section-heading h2{font-size:17px}.store{font-size:15px}.store b{font-size:9px}.app-kicker{font-size:8px}.row strong:has(.en-account){padding-right:76px}.badge{font-size:9px;padding:2px 5px}.en-inline{font-size:11px}}
+
+.share-actions{display:grid;grid-template-columns:1.2fr 1fr;gap:10px;margin-top:24px}.share-actions .primary{margin:0;flex-direction:column;min-height:66px;padding:12px 8px;font-size:13px;letter-spacing:0}.share-actions .primary span{font-size:11px;font-weight:400;margin-top:2px}.copy-link{background:white;color:#164b85;border:1px solid #b2cbe2}.copy-link:hover{color:white}#share-image-dialog{max-height:90dvh;overflow:auto;width:min(390px,94vw)}#share-image-dialog .designed-share-image{width:240px;max-width:100%;margin:12px auto}#card-link-input{width:100%;padding:12px;border:1px solid #b2cbe2;border-radius:8px;font-size:13px}#share-image-dialog .primary{font-size:13px}
