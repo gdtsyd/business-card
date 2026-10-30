@@ -1,4 +1,4 @@
-const cardPublicURL='https://gdtsyd.github.io/business-card/rebecca/';
+const cardPublicURL='https://gdtsyd.github.io/business-card/Rebecca-Chien/index.html';
 function offerShareImage(){const d=document.getElementById('share-image-dialog');document.getElementById('share-feedback').textContent='';if(!d.open)d.showModal()}
 async function shareCard(){
  const status=document.getElementById('notice');
